@@ -1,0 +1,17 @@
+{
+  "name": "@polymech/embedded.cpp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Native ESP-IDF applications. CMake via idf.py, not PlatformIO.",
+  "scripts": {
+    "build": "node scripts/idf.mjs build",
+    "build:hello-p4": "node scripts/idf.mjs build hello-p4",
+    "flash:hello-p4": "node scripts/idf.mjs flash hello-p4",
+    "monitor:hello-p4": "node scripts/idf.mjs monitor hello-p4",
+    "test:hello-p4": "node scripts/test-hello-p4.mjs"
+  },
+  "devDependencies": {
+    "serialport": "^13.0.0"
+  }
+}
