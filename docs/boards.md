@@ -45,7 +45,7 @@ User-described purchase: **“ESP32-P4 10,1 pulgadas 800*1280 IPS HMI módulo LC
 - Some community material refers to **`JC8012P4A1C`**; **do not assume the A1 and A1C revisions are identical**.
 - 10.1-inch portrait-oriented **800 × 1280 IPS** touch panel (orientation configurable by software).
 - ESP32-P4 + companion wireless hardware as described in listings.
-- Community references indicate **ES8311 audio codec**, microphone and speaker integration on at least certain variants; **verify the actual board's PCB revision, codec, microphone routing, speaker output and pin map**.
+- Factory pack `JC8012P4A1C_I_W_Y` is cloned at `vendor/JC8012P4A1`. Schematic page `5-Schematic/7_CODEC.png` shows an ES8311, an NS4150 speaker amp, and an onboard MEMS microphone (MSM381A3729H9CP) on the codec’s analog input. Pins and the preloaded phone desktop are in [JC8012P4A1.md](JC8012P4A1.md).
 - High resolution matters: one full **RGB565** framebuffer at 800 × 1280 requires **2,048,000 bytes (~1.95 MiB)**; two require ~3.91 MiB, before LVGL draw buffers, assets and audio workspaces.
 
 Community starting points discussed (evaluate revision/maintenance before adopting):
